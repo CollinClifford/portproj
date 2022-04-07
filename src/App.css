@@ -1,38 +1,71 @@
-.App {
+.header {
+  margin: 20px;
+  color: rgb(176, 176, 176);
+  font-family: monospace;
+}
+
+p {
+  margin: 20px;
+  color: rgb(176, 176, 176);
+  font-family: monospace;
+}
+h1 {
+  margin: 20px;
+  color: rgb(176, 176, 176);
+  font-family: monospace;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: black;
+}
+.nav {
+  color: rgb(20, 163, 189);
+}
+.menuBar {
+  background-color: gray;
+  color: black;
+  text-align: right;
+  padding-right: 22px;
+  border-radius: 15px 15px 0px 0px;
+  border-width: 1px;
+}
+
+.autoSize {
+  margin: 200px;
+}
+img {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 50%;
+  margin: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.collin {
+  color: rgb(70, 226, 70);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.port {
+  color: rgb(153, 35, 153);
+}
+.web {
+  color: rgb(197, 197, 78);
+}
+.blinker {
+  opacity: 1;
+  margin-bottom: -2px;
+  height: 15px;
+  margin-left: -5px;
+  border-left: 7px solid rgb(176, 176, 176);
+  animation: blinker 0.9s steps(2, start) infinite;
+  padding-left: 20px;
+}
+a {
+  text-decoration: none;
+  color: rgb(176, 176, 176);
+}
+ul {
+  list-style-type: none;
+}
+@keyframes blinker {
   to {
-    transform: rotate(360deg);
+    visibility: hidden;
   }
 }
