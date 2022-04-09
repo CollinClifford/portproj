@@ -1,16 +1,15 @@
 import { useEffect } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import Layout from "./Layout";
 import "./App.css";
 
 function App() {
   let navTitleArray = window.location.href.split("/");
-  let navTitle = `(${navTitleArray[navTitleArray.length - 1]})`;
-  console.log(window.location.href, navTitle);
+  let navTitle = "<sub>`(${navTitleArray[navTitleArray.length - 1]})`</sub>";
 
   let data = [
     {
-      headerTypeText: `<span> Welcome to<br/> <span class='collin'>Collin Clifford's </span><span class='port'>portfolio</span><span class='web'> ~/website</span><span class='nav'>${navTitle}</span><br/><br/>Which directory would you like to access?<br/></span><span><ul><li><a href='/about'>About</a></li><li><a href=''>Projects</a></li><li><a href=''>Work History</a></li><li><a href=''>Contact</a></li><li>Resume</li></ul></span>`,
+      headerTypeText: `<span> Welcome to<br/> <span class='collin'>Collin Clifford's </span><span class='port'>portfolio</span><span class='web'> ~/website</span><span class='nav'>${navTitle}</span><br/><br/>Which directory would you like to access?<br/></span><span><ul><li><a href='/about'>About</a></li><li><a href='/projects'>Projects</a></li><li><a href=''>Work History</a></li><li><a href=''>Contact</a></li><li>Resume</li></ul></span>`,
     },
   ];
   let allElements = document.getElementsByClassName("type");
@@ -44,7 +43,73 @@ function App() {
         <Row className="row">
           <Col>
             <div className="header">
-              <span id="headerTypeText" class="type"></span>
+              <Navbar variant="dark" bg="dark" expand="lg">
+                <Container fluid>
+                  <Navbar.Brand href="#home">
+                    <sub class="collin">Collin Clifford's </sub>
+                    <sub class="port">portfolio</sub>
+                    <sub class="web"> ~/website</sub>
+                    <sub class="nav">{navTitle}</sub>
+                    <br />
+                  </Navbar.Brand>
+                  <Navbar.Toggle aria-controls="navbar-dark-example" />
+                  <Navbar.Collapse id="navbar-dark-example">
+                    <Nav>
+                      <NavDropdown
+                        id="nav-dropdown-dark-example"
+                        title=""
+                        menuVariant="dark"
+                      >
+                        <NavDropdown.Item href="#action/3.1">
+                          Action
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">
+                          Another action
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">
+                          Something
+                        </NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="#action/3.4">
+                          Separated link
+                        </NavDropdown.Item>
+                      </NavDropdown>
+                    </Nav>
+                  </Navbar.Collapse>
+                </Container>
+              </Navbar>
+            </div>
+            <div className="header">
+              {/* <span id="headerTypeText" class="type"></span> */}
+              <span>
+                {" "}
+                Welcome to
+                <br /> <span class="collin">Collin Clifford's </span>
+                <span class="port">portfolio</span>
+                <span class="web"> ~/website</span>
+                <span class="nav">{navTitle}</span>
+                <br />
+                {/* <br />
+                Which directory would you like to access?
+                <br /> */}
+              </span>
+              <span>
+                <ul>
+                  <li>
+                    <a href="/about">About</a>
+                  </li>
+                  <li>
+                    <a href="/projects">Projects</a>
+                  </li>
+                  <li>
+                    <a href="">Work History</a>
+                  </li>
+                  <li>
+                    <a href="">Contact</a>
+                  </li>
+                  <li>Resume</li>
+                </ul>
+              </span>
               {/* <span class="blinker">&#32;</span> */}
             </div>
           </Col>

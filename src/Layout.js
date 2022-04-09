@@ -13,20 +13,9 @@ function Layout() {
       <Route path="/" element={<Navigate replace to="/main" />} />
       <Route path="/main" element={<Dashboard />} />
       <Route path="/about" element={<About />} />
-      {/* <About />
-        </Route> */}
-      {/* <Route path="/dashboard">
-        <Dashboard />
-      </Route>
-      <Route path="/projects">
-        <Projects />
-      </Route>
-      <Route path="/work">
-        <Work />
-      </Route>
-      <Route path="/contact">
-        <Contact />
-      </Route> */}
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/work" element={<Work />} />
+      <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
