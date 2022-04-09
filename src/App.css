@@ -1,72 +1,10 @@
 .header {
-  margin: 20px;
-  color: rgb(176, 176, 176);
+  /* margin: 20px; */
+  color: white;
   font-family: monospace;
 }
 
-p {
-  margin: 20px;
-  color: rgb(176, 176, 176);
-  font-family: monospace;
-}
-h1 {
-  margin: 20px;
-  color: rgb(176, 176, 176);
-  font-family: monospace;
-  text-align: center;
-  /* color: ; */
-}
 body {
-  display: flex;
   background-color: black;
-}
-.nav {
-  color: rgb(20, 163, 189);
-}
-.menuBar {
-  background-color: gray;
-  color: black;
-  text-align: right;
-  padding-right: 22px;
-  border-radius: 15px 15px 0px 0px;
-  border-width: 1px;
-}
-
-.autoSize {
-  margin: 200px;
-}
-img {
-  justify-content: center;
-  width: 50%;
-  margin: 20px;
-}
-.collin {
-  color: rgb(70, 226, 70);
-}
-.port {
-  color: rgb(153, 35, 153);
-}
-.web {
-  color: rgb(197, 197, 78);
-}
-.blinker {
-  opacity: 1;
-  margin-bottom: -2px;
-  height: 15px;
-  margin-left: -5px;
-  border-left: 7px solid rgb(176, 176, 176);
-  animation: blinker 0.9s steps(2, start) infinite;
-  padding-left: 20px;
-}
-a {
-  text-decoration: none;
-  color: rgb(176, 176, 176);
-}
-ul {
-  list-style-type: none;
-}
-@keyframes blinker {
-  to {
-    visibility: hidden;
-  }
+  color: rgba(255, 255, 255, 0.599);
 }

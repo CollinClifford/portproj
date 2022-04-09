@@ -5,7 +5,7 @@ import "./App.css";
 
 function App() {
   let navTitleArray = window.location.href.split("/");
-  let navTitle = "<sub>`(${navTitleArray[navTitleArray.length - 1]})`</sub>";
+  let navTitle = `${navTitleArray[navTitleArray.length - 1]}`;
 
   let data = [
     {
@@ -40,82 +40,46 @@ function App() {
   return (
     <>
       <Container>
-        <Row className="row">
-          <Col>
-            <div className="header">
-              <Navbar variant="dark" bg="dark" expand="lg">
-                <Container fluid>
-                  <Navbar.Brand href="#home">
-                    <sub class="collin">Collin Clifford's </sub>
-                    <sub class="port">portfolio</sub>
-                    <sub class="web"> ~/website</sub>
-                    <sub class="nav">{navTitle}</sub>
-                    <br />
-                  </Navbar.Brand>
-                  <Navbar.Toggle aria-controls="navbar-dark-example" />
-                  <Navbar.Collapse id="navbar-dark-example">
-                    <Nav>
-                      <NavDropdown
-                        id="nav-dropdown-dark-example"
-                        title=""
-                        menuVariant="dark"
-                      >
-                        <NavDropdown.Item href="#action/3.1">
-                          Action
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">
-                          Another action
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">
-                          Something
-                        </NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">
-                          Separated link
-                        </NavDropdown.Item>
-                      </NavDropdown>
-                    </Nav>
-                  </Navbar.Collapse>
-                </Container>
-              </Navbar>
-            </div>
-            <div className="header">
-              {/* <span id="headerTypeText" class="type"></span> */}
-              <span>
-                {" "}
-                Welcome to
-                <br /> <span class="collin">Collin Clifford's </span>
-                <span class="port">portfolio</span>
-                <span class="web"> ~/website</span>
-                <span class="nav">{navTitle}</span>
-                <br />
-                {/* <br />
-                Which directory would you like to access?
-                <br /> */}
-              </span>
-              <span>
-                <ul>
-                  <li>
-                    <a href="/about">About</a>
-                  </li>
-                  <li>
-                    <a href="/projects">Projects</a>
-                  </li>
-                  <li>
-                    <a href="">Work History</a>
-                  </li>
-                  <li>
-                    <a href="">Contact</a>
-                  </li>
-                  <li>Resume</li>
-                </ul>
-              </span>
-              {/* <span class="blinker">&#32;</span> */}
-            </div>
-          </Col>
-          <Col>
-            <Layout />
-          </Col>
+        <Row>
+          {/* <Col> */}
+          <div className="header">
+            <Navbar variant="dark" bg="dark" expand="lg">
+              <Container fluid>
+                <Navbar.Brand>
+                  ./CollinClifford/portfolio/{navTitle}
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="navbar-dark-example" />
+                <Navbar.Collapse id="navbar-dark-example">
+                  <Nav>
+                    <NavDropdown
+                      id="nav-dropdown-dark-example"
+                      title=""
+                      menuVariant="dark"
+                    >
+                      <NavDropdown.Item href="/about">about</NavDropdown.Item>
+                      <NavDropdown.Item href="/projects">
+                        projects
+                      </NavDropdown.Item>
+
+                      <NavDropdown.Item href="/work">
+                        workHistory
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="/contact">
+                        contact
+                      </NavDropdown.Item>
+                      <NavDropdown.Divider />
+                      <NavDropdown.Item href="#action/3.4">
+                        resume
+                      </NavDropdown.Item>
+                    </NavDropdown>
+                  </Nav>
+                </Navbar.Collapse>
+              </Container>
+            </Navbar>
+          </div>
+        </Row>
+        <Row>
+          <Layout />
         </Row>
       </Container>
     </>
