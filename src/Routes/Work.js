@@ -30,6 +30,14 @@ function Work() {
                     Phone Number
                   </NavDropdown.Item>
                 </NavDropdown>
+                <NavDropdown title="Erin Gaughan">
+                  <NavDropdown.Item href="mailto: erin.gaughan81@gmail.com">
+                    Email
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="tel:503-381-3981">
+                    Phone Number
+                  </NavDropdown.Item>
+                </NavDropdown>
               </Nav>
             </td>
             <td>
@@ -55,10 +63,35 @@ function Work() {
             </td>
           </tr>
           <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>Aviv</td>
+            <td>Kitchen Staff</td>
+            <td>05/2013-02/2021</td>
+            <td>
+              {" "}
+              <Nav>
+                <NavDropdown title="Tal Caspi">
+                  <NavDropdown.Item href="mailto: ray@mississippistudios.com">
+                    Email
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="tel:352-278-8876">
+                    Phone Number
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+            </td>
+            <td>
+              <ul>
+                <li>
+                  Demonstrated leadership by opening three locations throughout
+                  Portland with the owner by training new team members,
+                  contributing to menus, and helping set up kitchens.
+                </li>
+                <li>
+                  Showcased my ability to adapt by jumping into a team
+                  environment whenever called upon.
+                </li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td>3</td>
