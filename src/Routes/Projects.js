@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Card, Button, Accordion } from "react-bootstrap";
+import { Carousel, Container } from "react-bootstrap";
 import dashboard from "../img/dashboard.png";
 import docoderRing from "../img/decoderring.png";
 import constellations from "../img/Constellations.png";
@@ -10,19 +10,19 @@ import nasa from "../img/nasa.png";
 import pomodoro from "../img/pomodoro.png";
 import weather from "../img/weather.png";
 import simpson from "../img/Simpsons SS.png";
-import "../Layout.css";
+import "./projects.css";
 
 function Projects() {
   return (
-    <>
+    <Container>
       <Carousel variant="dark" fade>
         {/* Periodic Tables */}
         <Carousel.Item>
           <img className="d-block w-100" src={dashboard} alt="First slide" />
           <Carousel.Caption
             style={{
-              color: "black",
-              backgroundColor: "rgba(255, 255, 255, 0.775)",
+              color: "white",
+              backgroundColor: "rgba(000, 000, 000, 0.775)",
               padding: "2px",
             }}
           >
@@ -48,8 +48,8 @@ function Projects() {
           <img className="d-block w-100" src={docoderRing} alt="First slide" />
           <Carousel.Caption
             style={{
-              color: "black",
-              backgroundColor: "rgba(255, 255, 255, 0.775)",
+              color: "white",
+              backgroundColor: "rgba(000, 000, 000, 0.775)",
               padding: "2px",
             }}
           >
@@ -77,8 +77,8 @@ function Projects() {
           />
           <Carousel.Caption
             style={{
-              color: "black",
-              backgroundColor: "rgba(255, 255, 255, 0.775)",
+              color: "white",
+              backgroundColor: "rgba(000, 000, 000, 0.775)",
               padding: "2px",
             }}
           >
@@ -101,8 +101,8 @@ function Projects() {
           <img className="d-block w-100" src={flashcard} alt="First slide" />
           <Carousel.Caption
             style={{
-              color: "black",
-              backgroundColor: "rgba(255, 255, 255, 0.775)",
+              color: "white",
+              backgroundColor: "rgba(000, 000, 000, 0.775)",
               padding: "2px",
             }}
           >
@@ -123,8 +123,8 @@ function Projects() {
           <img className="d-block w-100" src={library} alt="First slide" />
           <Carousel.Caption
             style={{
-              color: "black",
-              backgroundColor: "rgba(255, 255, 255, 0.775)",
+              color: "white",
+              backgroundColor: "rgba(000, 000, 000, 0.775)",
               padding: "2px",
             }}
           >
@@ -145,8 +145,8 @@ function Projects() {
           <img className="d-block w-100" src={movies} alt="First slide" />
           <Carousel.Caption
             style={{
-              color: "black",
-              backgroundColor: "rgba(255, 255, 255, 0.775)",
+              color: "white",
+              backgroundColor: "rgba(000, 000, 000, 0.775)",
               padding: "2px",
             }}
           >
@@ -169,8 +169,8 @@ function Projects() {
           <img className="d-block w-100" src={pomodoro} alt="First slide" />
           <Carousel.Caption
             style={{
-              color: "black",
-              backgroundColor: "rgba(255, 255, 255, 0.775)",
+              color: "white",
+              backgroundColor: "rgba(000, 000, 000, 0.775)",
               padding: "2px",
             }}
           >
@@ -196,8 +196,8 @@ function Projects() {
           <img className="d-block w-100" src={nasa} alt="First slide" />
           <Carousel.Caption
             style={{
-              color: "black",
-              backgroundColor: "rgba(255, 255, 255, 0.775)",
+              color: "white",
+              backgroundColor: "rgba(000, 000, 000, 0.775)",
               padding: "2px",
             }}
           >
@@ -221,8 +221,8 @@ function Projects() {
           <img className="d-block w-100" src={weather} alt="First slide" />
           <Carousel.Caption
             style={{
-              color: "black",
-              backgroundColor: "rgba(255, 255, 255, 0.775)",
+              color: "white",
+              backgroundColor: "rgba(000, 000, 000, 0.775)",
               padding: "2px",
             }}
           >
@@ -241,12 +241,12 @@ function Projects() {
         </Carousel.Item>
 
         {/* Grub Dash */}
-        <Carousel.Item>
+        {/* <Carousel.Item>
           <img className="d-block w-100" src="" alt="First slide" />
           <Carousel.Caption
             style={{
-              color: "black",
-              backgroundColor: "rgba(255, 255, 255, 0.775)",
+              color: "white",
+              backgroundColor: "rgba(000, 000, 000, 0.775)",
               padding: "2px",
             }}
           >
@@ -260,15 +260,15 @@ function Projects() {
               Express.js
             </p>
           </Carousel.Caption>
-        </Carousel.Item>
+        </Carousel.Item> */}
 
         {/* Simpsons */}
         <Carousel.Item>
           <img className="d-block w-100" src={simpson} alt="First slide" />
           <Carousel.Caption
             style={{
-              color: "black",
-              backgroundColor: "rgba(255, 255, 255, 0.775)",
+              color: "white",
+              backgroundColor: "rgba(000, 000, 000, 0.775)",
               padding: "2px",
             }}
           >
@@ -289,7 +289,7 @@ function Projects() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-    </>
+    </Container>
   );
 }
 

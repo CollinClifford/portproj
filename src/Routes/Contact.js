@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import "./contact.css"
 
 function Contact() {
   return (
@@ -34,8 +35,7 @@ function Contact() {
               </svg>
             </a>
           </Col>
-        </Row>
-        <Row>
+        
           <Col>
             <a href="mailto: collinclifford@ymail.com">
               <svg

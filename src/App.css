@@ -1,10 +1,18 @@
 .header {
-  /* margin: 20px; */
   color: white;
   font-family: monospace;
 }
 
 body {
   background-color: black;
+  color: rgba(255, 255, 255, 0.599);
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.599);
+}
+
+a:hover {
   color: rgba(255, 255, 255, 0.599);
 }

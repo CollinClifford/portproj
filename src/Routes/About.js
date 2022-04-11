@@ -1,12 +1,16 @@
 import React from "react";
-import { Container, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import face from "../img/screen.jpg";
+import "./about.css";
 
 function About() {
   return (
     <>
-      <Col>
-        <h1>What up playa</h1>
+      <Container>
+        <div className="floated">
+          <img src={face} alt="The man himself" />
+        </div>
+        <h1>Friend of JavaScript and React</h1>
         <p>
           I recently graduated from Thinkful’s software engineering boot camp in
           February. During my time at Thinkful, I gained a lot of experience
@@ -49,8 +53,7 @@ function About() {
           me. I love working in a crew and I value each and every person I meet
           and know there’s always something to learn by listening.
         </p>
-      </Col>
-      <Col><img src={face} style={{"width":"100%"}}/></Col>
+      </Container>
     </>
   );
 }

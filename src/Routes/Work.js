@@ -1,9 +1,10 @@
 import React from "react";
-import { Table, Nav, NavDropdown } from "react-bootstrap";
+import { Table, Nav, NavDropdown, Container } from "react-bootstrap";
+import "./work.css"
 
 function Work() {
   return (
-    <>
+    <Container>
       <Table striped bordered hover variant="dark">
         <thead>
           <tr>
@@ -21,7 +22,7 @@ function Work() {
             <td>05/2016-05/2021</td>
             <td>
               {" "}
-              <Nav>
+              {/* <Nav>
                 <NavDropdown title="Ray Mullin">
                   <NavDropdown.Item href="mailto: ray@mississippistudios.com">
                     Email
@@ -38,7 +39,11 @@ function Work() {
                     Phone Number
                   </NavDropdown.Item>
                 </NavDropdown>
-              </Nav>
+              </Nav> */}
+              <ul>
+                <li>Ray Mullin</li>
+                <li>Erin Gaughan</li>
+              </ul>
             </td>
             <td>
               <ul>
@@ -67,7 +72,7 @@ function Work() {
             <td>Kitchen Staff</td>
             <td>05/2013-02/2021</td>
             <td>
-              {" "}
+              {/* {" "}
               <Nav>
                 <NavDropdown title="Tal Caspi">
                   <NavDropdown.Item href="mailto: ray@mississippistudios.com">
@@ -77,7 +82,11 @@ function Work() {
                     Phone Number
                   </NavDropdown.Item>
                 </NavDropdown>
-              </Nav>
+              </Nav> */}
+              <ul>
+                <li>Tal Caspi</li>
+                <li>Sanjay Chanddran</li>
+              </ul>
             </td>
             <td>
               <ul>
@@ -93,14 +102,14 @@ function Work() {
               </ul>
             </td>
           </tr>
-          <tr>
+          {/* <tr>
             <td>3</td>
             <td colSpan={2}>Larry the Bird</td>
             <td>@twitter</td>
-          </tr>
+          </tr> */}
         </tbody>
       </Table>
-    </>
+    </Container>
   );
 }
 
