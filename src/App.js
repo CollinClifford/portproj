@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Col, Container, Row, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import Layout from "./Layout";
+import Footer from "./Footer";
 import "./App.css";
 
 function App() {
@@ -39,9 +40,6 @@ function App() {
 
   return (
     <>
-      {/* <Container>
-        <Row> */}
-      {/* <Col> */}
       <div className="header">
         <Navbar variant="dark" bg="dark" expand="lg">
           <Container fluid>
@@ -60,25 +58,21 @@ function App() {
                   <NavDropdown.Item href="/work">workHistory</NavDropdown.Item>
                   <NavDropdown.Item href="/contact">contact</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">
-                    <a
-                      href="https://docs.google.com/document/d/1_dFo-uDbzWD4ojcVsdZT8uP5K9USbaddmg3mY9OTxiw/edit?usp=sharing"
-                      download
-                    >
-                      resume
-                    </a>
+                  <NavDropdown.Item
+                    href="https://docs.google.com/document/d/1_dFo-uDbzWD4ojcVsdZT8uP5K9USbaddmg3mY9OTxiw/edit?usp=sharing"
+                    download
+                  >
+                    resume
                   </NavDropdown.Item>
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>
           </Container>
+          
         </Navbar>
       </div>
-      {/* </Row>
-        <Row> */}
       <Layout />
-      {/* </Row> */}
-      {/* </Container> */}
+      {/* <Footer /> */}
     </>
   );
 }
