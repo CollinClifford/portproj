@@ -10,7 +10,7 @@ import NotFound from "./Routes/NotFound";
 function Layout() {
   return (
     <Routes>
-      <Route path="/" element={<Navigate replace to="/main" />} />
+      <Route path="/" element={<Navigate replace to="/about" />} />
       <Route path="/main" element={<Dashboard />} />
       <Route path="/about" element={<About />} />
       <Route path="/projects" element={<Projects />} />
