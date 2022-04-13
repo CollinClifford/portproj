@@ -1,3 +1,24 @@
+# Collin Clifford Portfolio Website #
+This is the repo for my portfolio website which I've yet to deploy as I need better photos of myself.
+It uses React.js and Bootstrap for layout and design.  It's a single-page application (React.js) where users can toggle between a list of my projects, my previous work, a contact form, and a downloadable resume.
+
+/about page
+![about page](/src/img/about.png)
+
+/projects
+![projects page](/src/img/projects.png)
+
+/workHistory
+![workHistory page](/src/img/workHistory.png)
+
+/contact
+![contact page](/src/img/contactForm.png)
+
+Download a resume
+![resume](/src/img/menu.png)
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
