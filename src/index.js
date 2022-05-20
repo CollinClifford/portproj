@@ -8,7 +8,12 @@ import { BrowserRouter as Router } from "react-router-dom";
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <video autoPlay loop muted id="video">
+        {/* <source src={backgroundVideo} type="video/mp4" /> */}
+        Your browser does not support the video tag.
+      </video>
       <App />
+      {/* Stock footage by <a href="http://www.videezy.com">Videezy</a> */}
     </Router>
   </React.StrictMode>,
   document.getElementById("root")
