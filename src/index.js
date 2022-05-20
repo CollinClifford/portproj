@@ -4,16 +4,16 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
+import backgroundVideo from "./img/bg.mp4";
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <video autoPlay loop muted id="video">
-        {/* <source src={backgroundVideo} type="video/mp4" /> */}
+        <source src={backgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <App />
-      {/* Stock footage by <a href="http://www.videezy.com">Videezy</a> */}
     </Router>
   </React.StrictMode>,
   document.getElementById("root")

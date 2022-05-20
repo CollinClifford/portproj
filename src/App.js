@@ -1,13 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-  Col,
-  Container,
-  Row,
-  Navbar,
-  Nav,
-  NavDropdown,
-  Button,
-} from "react-bootstrap";
+import { Col, Container, Row, Navbar, Nav, NavDropdown } from "react-bootstrap";
 import Layout from "./Layout";
 import Footer from "./Footer";
 import "./App.css";
@@ -151,7 +143,7 @@ function App() {
           </Col>
         </div>
       )}
-      <Button class="btn btn-dark" onClick={() => showMenu()}>Menu</Button>
+      <button onClick={() => showMenu()}>Menu</button>
       <Layout />
       <Footer />
     </>
